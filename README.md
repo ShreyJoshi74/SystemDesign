@@ -6,6 +6,7 @@ A step-by-step plan to learn system design from scratch and pass high-level desi
 
 ## What's inside
 
+- **[The Straight Path](system-design-roadmap-2026.md#the-straight-path-every-link-in-order):** all 105 steps as one numbered list of links, in the order you open them — for when you don't want to plan anything
 - **13 phases (0–12)**, from networking and database basics through distributed systems, APIs, reliability, estimation, the interview framework, LLD / machine coding, AI/ML/GenAI design, advanced topics, and mock interviews
 - **A placement test** to help you decide which phases to skip
 - **Three tracks:** Fast (8 weeks), Core (16 weeks, the default) and Deep (24 weeks)
@@ -28,7 +29,7 @@ The roadmap also covers the machine-coding rounds that many Indian product compa
 ## Getting started
 
 1. Take the [placement test](system-design-roadmap-2026.md#placement-test-what-can-you-skip) (about 10 minutes).
-2. Pick a [track](system-design-roadmap-2026.md#three-tracks) and follow [the 16-week schedule](system-design-roadmap-2026.md#the-16-week-schedule) or one of its variants.
+2. Pick a [track](system-design-roadmap-2026.md#three-tracks), then follow either [The Straight Path](system-design-roadmap-2026.md#the-straight-path-every-link-in-order) (every link in order) or [the 16-week schedule](system-design-roadmap-2026.md#the-16-week-schedule) (the same plan, organized by phase).
 3. Use the learning loop for every topic: **learn it → see it in a real system → use it in a problem → explain it out loud in 2 minutes**.
 4. Record your progress in the [progress tracker](system-design-roadmap-2026.md#progress-tracker).
 

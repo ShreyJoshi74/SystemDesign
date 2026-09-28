@@ -2,7 +2,7 @@
 
 A complete A-to-Z plan to learn system design from scratch and clear high-level design (HLD), low-level design (LLD) / machine-coding, and AI-era design rounds, using **free resources only**.
 
-> **Version 2** (28 September 2026): revised after a critical second pass; see [Version History](#version-history). Every resource link was checked against live sources during research.
+> **Version 3** (28 September 2026): coverage audit, plus [The Straight Path](#the-straight-path-every-link-in-order) — every resource as one ordered, linked sequence. See [Version History](#version-history). Every resource link was checked against live sources during research.
 >
 > **"Free"** means the linked material costs nothing. Some sites also sell premium tiers; those are marked.
 >
@@ -13,6 +13,7 @@ A complete A-to-Z plan to learn system design from scratch and clear high-level 
 ## Start Here: The Short Version
 
 - **This week:** take the [placement test](#placement-test-what-can-you-skip) (10 minutes), then start Phase 0 or Phase 1. Read Hello Interview's free [System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) introduction alongside it.
+- **Don't want to plan anything?** Open [The Straight Path](#the-straight-path-every-link-in-order) and work down it from step 1. Every resource, in order, with links.
 - **Every topic:** learn it → see it in a real system → use it in a problem → explain it out loud in 2 minutes.
 - **Core resources:** Hello Interview, System Design Primer, ByteByteGo, Jordan has no life and Kleppmann's lectures, plus free peer mocks on Aced.
 - **Milestones:** first practice problem in week 4 · baseline mock in week 8 · all 27 core problems by week 15 · 11 mocks by week 16.
@@ -27,27 +28,28 @@ A complete A-to-Z plan to learn system design from scratch and clear high-level 
 2. [The 2026 Interview Landscape](#the-2026-interview-landscape)
 3. [Your Core Free Resource Stack](#your-core-free-resource-stack)
 4. [Roadmap at a Glance](#roadmap-at-a-glance)
-5. [Phase 0: Prerequisites](#phase-0-prerequisites)
-6. [Phase 1: Core Building Blocks](#phase-1-core-building-blocks)
-7. [Phase 2: Data and Storage Deep Dive](#phase-2-data-and-storage-deep-dive)
-8. [Phase 3: Distributed Systems Core](#phase-3-distributed-systems-core)
-9. [Phase 4: APIs, Communication and Architecture Patterns](#phase-4-apis-communication-and-architecture-patterns)
-10. [Phase 5: Reliability, Observability, Security and Cost](#phase-5-reliability-observability-security-and-cost)
-11. [Phase 6: Back-of-the-Envelope Estimation](#phase-6-back-of-the-envelope-estimation)
-12. [Phase 7: The Interview Framework](#phase-7-the-interview-framework)
-13. [Phase 8: Practice Problems (The Curated 40)](#phase-8-practice-problems-the-curated-40)
-14. [Phase 9: Low-Level Design and Machine Coding](#phase-9-low-level-design-and-machine-coding)
-15. [Phase 10: AI, ML and GenAI System Design](#phase-10-ai-ml-and-genai-system-design)
-16. [Phase 11: Advanced and Senior+ Topics](#phase-11-advanced-and-senior-topics)
-17. [Phase 12: Mock Interviews and Final Prep](#phase-12-mock-interviews-and-final-prep)
-18. [The 16-Week Schedule](#the-16-week-schedule)
-19. [Progress Tracker](#progress-tracker)
-20. [Cheat Sheets](#cheat-sheets)
-21. [Complete Free Resource Index](#complete-free-resource-index)
-22. [Optional Paid Resources](#optional-paid-resources)
-23. [Final Interview-Readiness Checklist](#final-interview-readiness-checklist)
-24. [Version History](#version-history)
-25. [Sources](#sources)
+5. [**The Straight Path: Every Link in Order**](#the-straight-path-every-link-in-order)
+6. [Phase 0: Prerequisites](#phase-0-prerequisites)
+7. [Phase 1: Core Building Blocks](#phase-1-core-building-blocks)
+8. [Phase 2: Data and Storage Deep Dive](#phase-2-data-and-storage-deep-dive)
+9. [Phase 3: Distributed Systems Core](#phase-3-distributed-systems-core)
+10. [Phase 4: APIs, Communication and Architecture Patterns](#phase-4-apis-communication-and-architecture-patterns)
+11. [Phase 5: Reliability, Observability, Security and Cost](#phase-5-reliability-observability-security-and-cost)
+12. [Phase 6: Back-of-the-Envelope Estimation](#phase-6-back-of-the-envelope-estimation)
+13. [Phase 7: The Interview Framework](#phase-7-the-interview-framework)
+14. [Phase 8: Practice Problems (The Curated 40)](#phase-8-practice-problems-the-curated-40)
+15. [Phase 9: Low-Level Design and Machine Coding](#phase-9-low-level-design-and-machine-coding)
+16. [Phase 10: AI, ML and GenAI System Design](#phase-10-ai-ml-and-genai-system-design)
+17. [Phase 11: Advanced and Senior+ Topics](#phase-11-advanced-and-senior-topics)
+18. [Phase 12: Mock Interviews and Final Prep](#phase-12-mock-interviews-and-final-prep)
+19. [The 16-Week Schedule](#the-16-week-schedule)
+20. [Progress Tracker](#progress-tracker)
+21. [Cheat Sheets](#cheat-sheets)
+22. [Complete Free Resource Index](#complete-free-resource-index)
+23. [Optional Paid Resources](#optional-paid-resources)
+24. [Final Interview-Readiness Checklist](#final-interview-readiness-checklist)
+25. [Version History](#version-history)
+26. [Sources](#sources)
 
 ---
 
@@ -238,21 +240,218 @@ My assessment of where each resource shines, so you know what to use it for and 
 ```text
                  SYSTEM DESIGN ROADMAP (Core track: 16 weeks + 1 buffer week)
 
+ SEQUENTIAL THEORY (do these in this order)
  Weeks 1-2    Phase 0   Prerequisites: networking, OS, DB basics, build a CRUD app
  Weeks 3-6    Phase 1   Core building blocks: LB, cache, CDN, DBs, queues, blobs, search
- Week  7      Phase 2A  Data core: storage engines, transactions, data modeling
- Weeks 11-14  Phase 2B  Just-in-time data modules: geo (11), vectors (13), streams (14)
+ Week  7      Phase 2A  Data core: storage engines, transactions, modeling, serialization
  Weeks 8-9    Phase 3   Distributed systems: consistency, clocks, replication, consensus
  Week  10     Phase 4   APIs, auth, cloud primitives, resilience patterns
  Week  11     Phase 5   Reliability, observability, security, cost
+ Week  13     Phase 10  AI, ML and GenAI system design
+ Weeks 15+    Phase 11  Advanced: papers, real architectures, senior+ skills
+
+ JUST-IN-TIME MODULES (slotted right before the problems that need them)
+ Weeks 11-15  Phase 2B  geo (11) · vectors (13) · streams and CDC (14) · time-series (15)
+
+ PARALLEL TRACKS (running alongside the theory every week)
  Weeks 3-16   Phase 6   Estimation drills (15 minutes, twice a week)
  Week  4+     Phase 7   Interview framework (learn once, use in every problem)
  Weeks 4-16   Phase 8   Practice: 40 problems in 4 tiers + a speed re-solve each week
- Weeks 3-13   Phase 9   LLD and machine coding (parallel track)
- Week  13     Phase 10  AI, ML and GenAI system design
- Weeks 15+    Phase 11  Advanced: papers, real architectures, senior+ skills
+ Weeks 3-13   Phase 9   LLD and machine coding
  Weeks 8-16   Phase 12  Mock interviews (baseline in week 8), final prep
 ```
+
+**Want the links instead of the phases?** [The Straight Path](#the-straight-path-every-link-in-order) lists every resource as one numbered sequence you can follow top to bottom.
+
+---
+
+## The Straight Path: Every Link in Order
+
+The phases below explain *what* to learn and *why*. This section is the **flattened version**: one numbered list of links, in the order you open them, from step 1 to step 105. If you don't want to make decisions, work down this list.
+
+**How to read a row:** **Read** / **Watch** = theory · **Build** = write code · **Solve** = a timed practice problem ([the 90-minute loop](#the-90-minute-practice-loop)) · **Drill** = 15-minute estimation ([method](#the-method)) · **LLD** = the [parallel design track](#phase-9-low-level-design-and-machine-coding) · **Say** = the week's checkpoint, out loud, no notes · **Mock** = a [scored interview](#mock-scorecard-score-each-dimension-14).
+
+**Rules:** do the steps in order within a week; the week order is fixed, the order inside a day is yours. Anything marked *(optional)* is droppable when you fall behind. Where a row names a channel rather than a single video, search that channel for the listed topics — playlists get reorganized, channels don't.
+
+### Weeks 1–2 · Phase 0: prerequisites (≈10 hours each)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 1 | Read | [Hello Interview: In a Hurry — Introduction](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | Orient yourself: what the round is and how it's graded | 20 m |
+| 2 | Read | [What happens when you type a URL](https://github.com/alex/what-happens-when) | The whole walkthrough, slowly, looking up what you don't know | 2 h |
+| 3 | Read | [Cloudflare Learning Center](https://www.cloudflare.com/learning/) | The DNS, CDN, TLS/SSL and DDoS article sets | 2 h |
+| 4 | Watch | [Hussein Nasser](https://www.youtube.com/@hnasr) | Search: TCP vs UDP · HTTP/1.1 vs HTTP/2 vs HTTP/3 · TLS handshake · forward vs reverse proxy · connection pooling | 2.5 h |
+| 5 | Watch | [ByteByteGo](https://www.youtube.com/@ByteByteGo) | Short videos on DNS, HTTP versions, TLS | 1 h |
+| 6 | Read | [Hello Interview: Core Concepts](https://www.hellointerview.com/learn/system-design/in-a-hurry/core-concepts) | Networking and API sections | 1 h |
+| 7 | Say | — | **Checkpoint:** 5 minutes on what happens when you type a URL | 30 m |
+| 8 | Watch | [Hussein Nasser](https://www.youtube.com/@hnasr) | Search: database indexing · B-tree · ACID · isolation levels · threads vs processes · blocking vs non-blocking I/O | 2 h |
+| 9 | Read | [System Design Primer](https://github.com/donnemartin/system-design-primer) | The *Relational databases*, *NoSQL* and *Caching* sections only | 1.5 h |
+| 10 | Build | Postgres + Redis + Docker Compose + [k6](https://k6.io/) | The [Phase 0 hands-on](#hands-on-do-not-skip) app. Load test it, then delete the cache and watch p99 move | 5 h |
+| 11 | Read | [CMU 15-445](https://15445.courses.cs.cmu.edu/) *(optional)* | Lectures 1–3 only, if you want database depth early | 2 h |
+| 12 | Say | — | **Checkpoint:** why an index speeds up reads and slows down writes | 20 m |
+
+### Week 3 · Scalability, load balancers, estimation, LLD starts (≈8.5 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 13 | Read | [Hello Interview: Key Technologies](https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies) | Skim all of it once, then the load balancer and API gateway parts closely | 1.5 h |
+| 14 | Read | [System Design Primer](https://github.com/donnemartin/system-design-primer) | *Performance vs scalability*, *Latency vs throughput*, *Availability vs consistency*, *Load balancer*, *Reverse proxy* | 1.5 h |
+| 15 | Watch | [ByteByteGo](https://www.youtube.com/@ByteByteGo) | L4 vs L7 load balancing; algorithms; API gateway | 45 m |
+| 16 | Read | [Back-of-the-envelope guide](https://systemdesign.one/back-of-the-envelope/) + [latency numbers](https://gist.github.com/jboner/2841832) + [Modern Hardware Numbers](https://hellointerview.substack.com/p/modern-hardware-numbers-for-system) | Learn the [7-step method](#the-method); memorize the ratios, not the digits | 1.5 h |
+| 17 | Drill | [Interactive latency numbers](https://colin-scott.github.io/personal_website/research/interactive_latency.html) | Drills 1–2: X/Twitter timeline QPS · WhatsApp messages/sec | 30 m |
+| 18 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | The OOP and SOLID sections | 2 h |
+| 19 | Say | — | **Checkpoint:** why p99 matters more than the average; where you'd terminate TLS | 20 m |
+
+### Week 4 · Caching, CDNs, the framework, first problem (≈9 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 20 | Read | [Hello Interview: Delivery Framework](https://www.hellointerview.com/learn/system-design/in-a-hurry/delivery) | **The single most important read in this roadmap.** Learn the [45-minute flow](#the-45-minute-flow) | 1 h |
+| 21 | Read | [interviewing.io: Senior Engineer's Guide](https://interviewing.io/guides/system-design-interview) | All four parts; note every green and red flag | 1.5 h |
+| 22 | Read | [Hello Interview: Key Technologies](https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies) + [Primer](https://github.com/donnemartin/system-design-primer) | Redis and CDN sections; Primer's *Cache* and *CDN* | 1.5 h |
+| 23 | Watch | [Jordan has no life](https://www.youtube.com/@jordanhasnolife5163) | The caching concept videos: strategies, invalidation, stampede | 1 h |
+| 24 | Solve | **#1 URL shortener** → compare with [Primer's solution](https://github.com/donnemartin/system-design-primer) and the [Hello Interview breakdown](https://www.hellointerview.com/learn/system-design/problem-breakdowns/overview) | Your first timed solve, on [Excalidraw](https://excalidraw.com/), out loud | 1.5 h |
+| 25 | LLD | [Refactoring.Guru](https://refactoring.guru/design-patterns) | Strategy, Factory Method, Observer — read and code each once | 2 h |
+| 26 | Drill | — | Drills 3–4: YouTube storage per day · Instagram photo storage per year | 30 m |
+
+### Week 5 · Databases, replication, sharding (≈10 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 27 | Read | [Primer](https://github.com/donnemartin/system-design-primer) | *Database* in full: replication, federation, sharding, denormalization, SQL tuning | 2 h |
+| 28 | Watch | [Jordan has no life](https://www.youtube.com/@jordanhasnolife5163) | Partitioning and replication concept videos | 1.5 h |
+| 29 | Watch | [Arpit Bhayani](https://youtube.com/c/ArpitBhayani) + [knowledge base](https://github.com/arpitbbhayani/knowledge-base) | Consistent hashing; indexing internals; hot partitions | 1.5 h |
+| 30 | Read | [System Design 101](https://github.com/ByteByteGoHq/system-design-101) | The database and SQL-vs-NoSQL sections, for the diagrams | 45 m |
+| 31 | Solve | **#2 Pastebin** (60 min) · **#3 Distributed rate limiter** (90 min) | Rate limiter: get the Redis atomicity right | 2.5 h |
+| 32 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Parking lot**, timed, then read the reference solution | 2 h |
+| 33 | Say | — | **Checkpoint:** how you'd serve "all posts from the last hour" when sharded by `user_id` | 20 m |
+
+### Week 6 · Queues, streams, blobs, search, real-time (≈11 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 34 | Read | [Hello Interview: Key Technologies](https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies) + [Patterns](https://www.hellointerview.com/learn/system-design/in-a-hurry/patterns) | Kafka, queues, Elasticsearch, blob storage; then every pattern | 2 h |
+| 35 | Watch | [Jordan has no life](https://www.youtube.com/@jordanhasnolife5163) | Kafka internals; delivery semantics; idempotency | 1.5 h |
+| 36 | Read | [Kafka documentation](https://kafka.apache.org/documentation/) | The **Design** section only (the log, partitions, consumer groups, offsets) | 1 h |
+| 37 | Watch | [ByteByteGo](https://www.youtube.com/@ByteByteGo) | Polling vs SSE vs WebSockets; scaling WebSockets | 45 m |
+| 38 | Solve | **#4 Unique ID** (60 m) · **#5 Notification system** (90 m) · **#6 Distributed counter** (90 m) | — | 3.5 h |
+| 39 | Solve | **Re-solve #1** (25-minute speed run) | Requirements → API → design → 3 deep dives. Diff against your old notes | 30 m |
+| 40 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Thread-safe LRU cache**, timed | 1.5 h |
+
+### Week 7 · Phase 2A: storage engines, transactions, serialization (≈10 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 41 | Watch | [Jordan has no life](https://www.youtube.com/@jordanhasnolife5163) | B-trees vs LSM-trees; WAL; compaction; transactions and isolation | 2 h |
+| 42 | Read | [Hermitage](https://github.com/ept/hermitage) *(optional)* | What real databases actually do at each isolation level | 45 m |
+| 43 | Read | [Protocol Buffers language guide](https://protobuf.dev/programming-guides/proto3/) | *Updating a message type*: why field numbers are forever | 45 m |
+| 44 | Read | [Confluent: schema evolution and compatibility](https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html) | Backward vs forward compatibility; what a schema registry buys you | 45 m |
+| 45 | Solve | **#7 Typeahead** (90 m) · **#8 Leaderboard** (60 m) · **#9 Distributed cache** (90 m) | #9 is deliberately early — you revisit it in week 9 | 4 h |
+| 46 | Solve | **Re-solve #3** (speed run) | — | 30 m |
+| 47 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Splitwise**, timed | 1.5 h |
+| 48 | Say | — | **Checkpoint:** write skew with a concrete example; pick a database for 5 workloads | 30 m |
+
+### Weeks 8–9 · Phase 3: distributed systems (≈11 h and ≈10 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 49 | Watch | [Kleppmann: Distributed Systems](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) + [notes PDF](https://www.cl.cam.ac.uk/teaching/2122/ConcDisSys/dist-sys-notes.pdf) | **Lectures 1–5:** intro, system models, time and clocks, broadcast, replication | 3 h |
+| 50 | Read | [Jepsen: consistency models](https://jepsen.io/consistency) | The map; be able to place linearizable, causal, read-your-writes, eventual | 45 m |
+| 51 | Solve | **#10 News feed** (90 m) · **#11 Instagram** (60 m) · **re-solve #5** | Fan-out on write vs read; the celebrity problem | 3 h |
+| 52 | Mock | [Aced peer mocks](https://www.tryexponent.com/practice) or [HI Guided Practice](https://www.hellointerview.com/practice/overview) | **Mock #1 (baseline).** Use a problem you've already solved | 1.5 h |
+| 53 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Elevator system**, timed | 1.5 h |
+| 54 | Watch | [Kleppmann playlist](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) | **Lectures 6–8:** consensus, replica consistency, case studies (CRDTs, Spanner) | 2.5 h |
+| 55 | Watch | [Raft visualization](https://thesecretlivesofdata.com/raft/) → [raft.github.io](https://raft.github.io/) | Visualization first, then the paper's figures 2 and 3 | 1.5 h |
+| 56 | Read | [Kleppmann: How to do distributed locking](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html) | Why a lock needs a fencing token | 45 m |
+| 57 | Read | [Transactional outbox](https://microservices.io/patterns/data/transactional-outbox.html) + [Saga](https://microservices.io/patterns/data/saga.html) | Both patterns; orchestration vs choreography | 45 m |
+| 58 | Read | [Distributed Systems for Fun and Profit](https://book.mixu.net/distsys/) *(optional)* | Chapters 2–4 | 1.5 h |
+| 59 | Solve | **#12 Chat** (90 m) · **#13 YouTube** (90 m) · **re-solve #9** using quorums | — | 3.5 h |
+| 60 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **BookMyShow**, timed | 1.5 h |
+| 61 | Say | — | **Checkpoint:** why timeouts alone can't make a safe lock; Raft leader crash; exactly-once *delivery* vs *processing* | 30 m |
+
+### Week 10 · Phase 4: APIs, auth, cloud, resilience (≈11.5 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 62 | Read | [Timeouts, retries and backoff with jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) | Required reading. Retry budgets and why jitter matters | 1 h |
+| 63 | Read | [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) | How to design an idempotency key | 1 h |
+| 64 | Read | [Avoiding fallback in distributed systems](https://aws.amazon.com/builders-library/avoiding-fallback-in-distributed-systems/) *(optional)* | Senior-level, counter-intuitive | 45 m |
+| 65 | Watch | [ByteByteGo](https://www.youtube.com/@ByteByteGo) | REST vs gRPC vs GraphQL; OAuth 2.0 and OIDC; JWT | 1 h |
+| 66 | Read | [microservices.io patterns](https://microservices.io/patterns/) | Circuit breaker, bulkhead, service discovery, CQRS, event sourcing | 45 m |
+| 67 | Read | [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/) + [Overview](https://kubernetes.io/docs/concepts/overview/) | Enough to say "pod, service, deployment, HPA" and mean it | 45 m |
+| 68 | Solve | **#14 Dropbox** (90 m) · **#15 Ticketmaster** (90 m) · **re-solve #10** | Ticketmaster: seat contention and reservation TTLs | 3.5 h |
+| 69 | Mock | [Aced](https://www.tryexponent.com/practice) | **Mock #2** | 1.5 h |
+| 70 | LLD | [workat.tech machine coding](https://workat.tech/machine-coding/) | Read the format guide, then **Snake and Ladder** timed | 1.5 h |
+| 71 | Say | — | **Checkpoint:** a retry-safe "place order" API; three ways to stop a retry storm | 30 m |
+
+### Week 11 · Phase 5 + geo module (≈13.5 h — the heaviest week)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 72 | Read | [SRE ch. 4: Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) + [ch. 6: Monitoring](https://sre.google/sre-book/monitoring-distributed-systems/) | SLI vs SLO vs SLA, error budgets; the four golden signals; symptom-based alerting | 1.5 h |
+| 73 | Read | [SRE ch. 21: Handling Overload](https://sre.google/sre-book/handling-overload/) + [ch. 22: Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/) | Load shedding, criticality, client throttling, cold caches | 1.5 h |
+| 74 | Read | [Workload isolation using shuffle sharding](https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/) + [load shedding](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/) *(second one optional)* | Blast radius, cells, shuffle sharding | 1.25 h |
+| 75 | Read | [The Tail at Scale](https://research.google/pubs/the-tail-at-scale/) | Hedged and tied requests; why p99 gets worse as you add fan-out | 45 m |
+| 76 | Read | [Cost anchors](#k-cost-anchors-what-actually-drives-the-bill) + [OWASP Top 10](https://owasp.org/www-project-top-ten/) (skim) | The top two cost drivers and a lever for each design you've done | 45 m |
+| 77 | Read | [Uber H3](https://h3geo.org/) | Geohash vs quadtree vs S2 vs H3; pick one and know it properly | 45 m |
+| 78 | Solve | **#16 Uber** (90 m) · **#17 Yelp** (60 m) · **#18 Web crawler** (90 m) · **re-solve #12** | — | 4.5 h |
+| 79 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Thread-safe rate limiter**, timed | 1.5 h |
+| 80 | Mock | [Aced](https://www.tryexponent.com/practice) | **Mock #3** | 1.5 h |
+| 81 | Say | — | **Checkpoint:** 99.9% in minutes/month; three ways to cut video-streaming cost by 30%; the fan-out p99 question | 30 m |
+
+> **Week 11 is over budget and you should plan for it.** As scheduled it holds all of Phase 5, the geo module, three new problems, a re-solve, an LLD problem and a mock — about 13.5 hours against a 12-hour target. Pick one before the week starts: spend your [buffer week](#weekly-time-budget) here, push **#18 Web crawler** to week 15, or drop the optional reading in steps 74 and 76. Don't drop the mock.
+
+### Week 12 · Money, contention, consistency under load (≈11 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 82 | Watch | [Arpit Bhayani](https://youtube.com/c/ArpitBhayani) | Payment systems, idempotency, double-entry ledgers, inventory consistency | 1.5 h |
+| 83 | Read | Your [trade-off journal](#five-rules-that-save-months) | Review every entry so far; you should have 25+ | 45 m |
+| 84 | Solve | **#19 Payments** (90 m) · **#20 Flash sale** (90 m) · **#21 Food delivery** (90 m) · **re-solve #15** | — | 5 h |
+| 85 | Mock | [Aced](https://www.tryexponent.com/practice) | **Mock #4** | 1.5 h |
+| 86 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **Food ordering**, timed | 1.5 h |
+
+### Week 13 · Phase 10: AI, ML and GenAI (≈12 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 87 | Read | [Building A Generative AI Platform (Chip Huyen)](https://huyenchip.com/2024/07/25/genai-platform.html) | **Read this one twice.** It is the reference architecture for #36 | 1.5 h |
+| 88 | Read | [Patterns for Building LLM-based Systems (Eugene Yan)](https://eugeneyan.com/writing/llm-patterns/), then [Start Here](https://eugeneyan.com/start-here/) and [Applied LLMs](https://applied-llms.org/) *(both optional)* | Evals, RAG, caching, guardrails, defensive UX; then two-stage retrieval and ranking | 1.5 h |
+| 89 | Read | [Building effective agents (Anthropic)](https://www.anthropic.com/research/building-effective-agents) | Workflows vs agents; the five patterns | 45 m |
+| 90 | Read | [Evidently AI: ML and LLM case studies](https://www.evidentlyai.com/ml-system-design) | Filter to RAG and recommendations; read three real write-ups | 1 h |
+| 91 | LLD | [awesome-low-level-design](https://github.com/ashishps1/awesome-low-level-design) | **In-memory key-value store with transactions**, timed | 1.5 h |
+| 92 | Solve | **#35 RAG system** (90 m) · **#36 LLM gateway** (90 m) · **re-solve #16** | Access control at retrieval time; token accounting | 3.5 h |
+| 93 | Mock | [Aced](https://www.tryexponent.com/practice) | **Mock #5** — ask for one AI-flavored prompt | 1.5 h |
+| 94 | Say | — | **Checkpoint:** where the 3-second p95 goes in a RAG design; how you'd find a doubled LLM bill | 30 m |
+
+### Week 14 · Streams, CDC and infrastructure problems (≈11.5 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 95 | Watch | [Jordan has no life](https://www.youtube.com/@jordanhasnolife5163) | Stream processing: windows, event vs processing time, watermarks, Lambda vs Kappa | 2 h |
+| 96 | Read | [System Design 101](https://github.com/ByteByteGoHq/system-design-101) | CDC, the outbox, batch vs stream, OLTP vs OLAP sections | 1 h |
+| 97 | Solve | **#25 Message queue** (90 m) · **#27 Top-K** (90 m) · **#28 Ad click aggregator** (90 m) · **re-solve #19** | — | 5 h |
+| 98 | Mock | [Aced](https://www.tryexponent.com/practice) + peer group | **Mocks #6–7** | 3 h |
+
+### Weeks 15–16 · Papers, real architectures, final prep (≈12 h and ≈11.5 h)
+
+| # | Type | Resource | What to cover | ~Time |
+|---|---|---|---|---|
+| 99 | Read | [The 10-paper reading list](#the-10-paper-reading-list) | Abstract, intro, design, conclusion only. Two or three papers, not ten | 3 h |
+| 100 | Read | [High Scalability](https://highscalability.com/) · [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) · [engineering blogs](https://github.com/kilimchoi/engineering-blogs) | One architecture a week, summarized in five lines | 1.5 h |
+| 101 | Solve | **#26 Job scheduler** + full 60-minute re-solves of your 5 weakest | — | 4 h |
+| 102 | Mock | [Aced](https://www.tryexponent.com/practice) + peer group | **Mocks #8–9** | 3 h |
+| 103 | Read | [Stretch problems for your role](#which-stretch-problems-to-add) + company engineering blogs | Their products, their blog, recent interview reports | 2 h |
+| 104 | Solve | Full re-solves of 5 more; rehearse your [project deep dive](#prepare-your-project-deep-dive) out loud | — | 4 h |
+| 105 | Mock | [Aced](https://www.tryexponent.com/practice) + peer group | **Mocks #10–11**, then the [readiness checklist](#final-interview-readiness-checklist) | 3 h |
+
+### The short list, if you only open five things
+
+1. [Hello Interview: System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) — the framework and the components
+2. [System Design Primer](https://github.com/donnemartin/system-design-primer) — the reference and the flashcards
+3. [Kleppmann's lectures](https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB) — the theory
+4. [Amazon Builders' Library](https://aws.amazon.com/builders-library/) + [Google SRE book](https://sre.google/books/) — production judgment
+5. [Aced peer mocks](https://www.tryexponent.com/practice) — someone to practice against
 
 ---
 
@@ -427,14 +626,24 @@ For each component above, give a 2-minute explanation covering **what, why, when
 - [ ] Global vs local secondary indexes; hot keys and write sharding
 - [ ] Modeling time-ordered data: feeds, chats, events
 
+**Serialization and schema evolution**
+- [ ] JSON vs Protobuf/Avro/Thrift: size, speed, schema enforcement, human readability
+- [ ] Backward compatibility (new code reads old data) vs forward compatibility (old code reads new data), and why you need both during a rolling deploy
+- [ ] Why Protobuf field numbers are permanent, and what breaks when you reuse one
+- [ ] Schema registries in streaming pipelines; who validates a producer's schema
+- [ ] Compression (gzip, Snappy, zstd) and where it pays for itself
+
+**Why this matters in interviews:** every design with a queue, a stream or a versioned API has an implicit schema-evolution question in it. "How do you deploy a new field without breaking consumers?" is a very common follow-up, and it is also the honest answer to "how do you do a zero-downtime migration?"
+
 ### 2B: Just-in-time modules
 
 | Module | When | Right before | Topics |
 |---|---|---|---|
 | Geospatial indexing | Week 11 | #16 Uber, #17 Yelp | Geohash, quadtrees, Google S2, [Uber H3](https://h3geo.org/); high-frequency location writes |
-| Data lifecycle and privacy | Week 11 (with Phase 5) | — | Hot/warm/cold tiers, archival, retention and deletion (privacy laws such as GDPR or India's DPDP Act) |
+| Data lifecycle and privacy | Week 12 | #19 Payments, #20 Flash sale | Hot/warm/cold tiers, archival, retention and deletion (privacy laws such as GDPR or India's DPDP Act) |
 | Vectors and embeddings | Week 13 (with [Phase 10](#phase-10-ai-ml-and-genai-system-design)) | #35 RAG | Embeddings, approximate nearest-neighbor search (HNSW), hybrid search |
 | Stream processing and CDC | Week 14 | #27 Top-K, #28 Ad click aggregator | Batch (MapReduce, Spark) vs streams (Flink, Kafka Streams); tumbling, sliding and session windows; event vs processing time; watermarks and late data; Lambda vs Kappa; change data capture and the transactional outbox |
+| OLTP vs OLAP | Week 14 (with the stream module) | #28 Ad click aggregator, #29 Metrics | Row vs columnar storage; why analytics doesn't belong on your production database; warehouses and lakehouses (BigQuery, Snowflake, ClickHouse); ETL vs ELT; the serving layer that dashboards actually read |
 | Time-series and graph data | Week 15 (stretch) | #29 Metrics, social-graph questions | Downsampling, rollups, retention; adjacency lists in SQL vs graph databases |
 
 ### Resources
@@ -597,6 +806,17 @@ For each component above, give a 2-minute explanation covering **what, why, when
 - [ ] Disaster recovery: backups, RPO (how much data you can afford to lose) and RTO (how fast you must recover)
 - [ ] Handling overload and cascading failures: load shedding, admission control
 
+**Tail latency and blast radius**
+- [ ] Why p99 gets *worse* as you fan out: a request touching 100 servers is only as fast as its slowest one
+- [ ] Tail-tolerant techniques: hedged requests, tied requests, micro-partitioning, "constant work" designs
+- [ ] Blast radius: cell-based architecture, shuffle sharding, and why one bad tenant shouldn't take down everyone
+- [ ] Bulkheads and per-tenant quotas as isolation, not just as rate limiting
+
+**Testing for failure**
+- [ ] Load testing to failure, not to target — you need to know where the cliff is
+- [ ] Chaos engineering: hypothesis, blast-radius limits, running in production, game days
+- [ ] Fault injection, dependency failure drills, and failover rehearsals (an untested failover is a hope, not a plan)
+
 **Observability**
 - [ ] Logs, metrics and traces, and what each one is for
 - [ ] RED (rate, errors, duration) for services; USE (utilization, saturation, errors) for resources
@@ -623,14 +843,23 @@ For each component above, give a 2-minute explanation covering **what, why, when
 
 | Priority | Resource | Notes |
 |---|---|---|
-| Primary | [Google SRE book (free online)](https://sre.google/books/) | Read chapters 4 (Service Level Objectives), 6 (Monitoring Distributed Systems), 21 (Handling Overload) and 22 (Addressing Cascading Failures) |
-| Supplement | [Amazon Builders' Library](https://aws.amazon.com/builders-library/) | Load shedding, queue backlogs, safe deployments |
+| Primary | Google SRE book, chapters [4 (Service Level Objectives)](https://sre.google/sre-book/service-level-objectives/), [6 (Monitoring Distributed Systems)](https://sre.google/sre-book/monitoring-distributed-systems/), [21 (Handling Overload)](https://sre.google/sre-book/handling-overload/) and [22 (Addressing Cascading Failures)](https://sre.google/sre-book/addressing-cascading-failures/) | The four chapters that carry most of the operational rubric. [All three books](https://sre.google/books/) are free |
+| Primary | [Using load shedding to avoid overload](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/) (Builders' Library) | What to do when you're already over capacity |
+| Primary | [Workload isolation using shuffle sharding](https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/) | The clearest explanation of blast-radius reduction anywhere |
+| Primary | [The Tail at Scale](https://research.google/pubs/the-tail-at-scale/) (Dean and Barroso) | Where tail latency comes from and how to fight it |
+| Supplement | [Reliability, constant work, and a good cup of coffee](https://aws.amazon.com/builders-library/reliability-and-constant-work/) | Designs that behave identically under load and under failure |
+| Supplement | [Principles of Chaos Engineering](https://principlesofchaos.org/) | Short; the method, not the tooling |
+| Supplement | [OWASP Top 10](https://owasp.org/www-project-top-ten/) | Skim the ten risks so your security answers name real ones |
+| Supplement | [Amazon Builders' Library](https://aws.amazon.com/builders-library/) | Queue backlogs, safe deployments, health checks |
 | Supplement | *Building Secure and Reliable Systems* (free on the same [SRE books page](https://sre.google/books/)) | Security and reliability together |
+
+> **Note on Builders' Library links:** these now redirect to `builder.aws.com`. The `aws.amazon.com/builders-library/...` links still work and land in the right place.
 
 ### Checkpoint
 
 - Your service has a 99.9% SLO. How much downtime per month is that, and what happens when the error budget runs out?
 - Name three ways to cut the cost of a video-streaming design by 30% without hurting user experience.
+- A request fans out to 50 shards and each shard has a 1-in-100 chance of taking 1 second. What is your p99, and what would you do about it?
 
 ---
 
@@ -1007,16 +1236,18 @@ Video calling like Zoom (WebRTC, media servers) · maps and ETAs (routing, live 
 
 Read each paper's abstract, introduction, design section and conclusion; skip the proofs. The [MIT 6.5840 schedule](https://pdos.csail.mit.edu/6.824/schedule.html) links many of these with guiding questions.
 
-1. **GFS** (Google File System): distributed storage for large files
-2. **MapReduce**: batch processing at scale
-3. **Bigtable**: wide-column storage
+1. **[GFS](https://pdos.csail.mit.edu/6.824/papers/gfs.pdf)** (Google File System): distributed storage for large files
+2. **[MapReduce](https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf)**: batch processing at scale
+3. **[Bigtable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)**: wide-column storage
 4. **[Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)**: leaderless replication, consistent hashing, quorums, vector clocks
-5. **Chubby**: a lock service for coarse-grained coordination
-6. **ZooKeeper**: a coordination service
-7. **[Raft](https://raft.github.io/)**: understandable consensus
-8. **Spanner**: globally distributed transactions with TrueTime
-9. **Kafka**: the distributed log
-10. **[Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala)**: caching at massive scale
+5. **[Chubby](https://static.googleusercontent.com/media/research.google.com/en//archive/chubby-osdi06.pdf)**: a lock service for coarse-grained coordination
+6. **[ZooKeeper](https://pdos.csail.mit.edu/6.824/papers/zookeeper.pdf)**: a coordination service
+7. **[Raft](https://pdos.csail.mit.edu/6.824/papers/raft-extended.pdf)** (extended version; start with the [visualization](https://thesecretlivesofdata.com/raft/)): understandable consensus
+8. **[Spanner](https://pdos.csail.mit.edu/6.824/papers/spanner.pdf)**: globally distributed transactions with TrueTime
+9. **Kafka**: the distributed log — read the [official Design section](https://kafka.apache.org/documentation/) rather than the 2011 paper; it is clearer and current
+10. **[Scaling Memcache at Facebook](https://pdos.csail.mit.edu/6.824/papers/memcache-fb.pdf)**: caching at massive scale ([USENIX page](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala))
+
+**Two worth adding if you have time:** **[The Tail at Scale](https://research.google/pubs/the-tail-at-scale/)** (why large fan-out systems have terrible tails, and what to do about it — the most *immediately* useful paper on this list for interviews) and **[Paxos Made Simple](https://pdos.csail.mit.edu/6.824/papers/paxos-simple.pdf)** (only if Raft already makes sense to you).
 
 ### Senior and staff skills to practice
 
@@ -1124,14 +1355,16 @@ If you're a fresher, use your strongest project or internship, and be honest abo
 | 8 (16 Nov) | Phase 3, part 1 (Kleppmann lectures 1–5) | #10 News feed, #11 Instagram · re-solve #5 | LLD: Elevator · **Mock #1 (baseline)** | 11 |
 | 9 (23 Nov) | Phase 3, part 2 (lectures 6–8, Raft, sagas, algorithm toolbox) | #12 Chat, #13 YouTube · re-solve #9 using quorums and replication | LLD: BookMyShow | 10 |
 | 10 (30 Nov) | Phase 4: APIs, auth, cloud primitives, resilience | #14 Dropbox, #15 Ticketmaster/BookMyShow · re-solve #10 | LLD: Snake and Ladder (timed) · **Mock #2** | 11.5 |
-| 11 (7 Dec) | Phase 5 + 2B geo and data-lifecycle modules | #16 Uber, #17 Yelp, #18 Web crawler · re-solve #12 | LLD: thread-safe rate limiter · **Mock #3** | 12 |
-| 12 (14 Dec) | Idempotency and double-entry ledgers (for #19); review your trade-off journal | #19 Payments, #20 Flash sale, #21 Food delivery · re-solve #15 | LLD: Food ordering (timed) · **Mock #4** | 11 |
+| 11 (7 Dec) | Phase 5 + 2B geo module | #16 Uber, #17 Yelp, #18 Web crawler · re-solve #12 | LLD: thread-safe rate limiter · **Mock #3** | 13 ⚠ |
+| 12 (14 Dec) | Idempotency and double-entry ledgers (for #19); 2B data-lifecycle module; review your trade-off journal | #19 Payments, #20 Flash sale, #21 Food delivery · re-solve #15 | LLD: Food ordering (timed) · **Mock #4** | 11.5 |
 | 13 (21 Dec) | Phase 10 + 2B vector module | #35 RAG, #36 LLM gateway · re-solve #16 | LLD: key-value store with transactions (timed) · **Mock #5** (include one AI prompt) | 12 |
 | 14 (28 Dec) | 2B stream-processing module; Kafka internals | #25 Message queue, #27 Top-K, #28 Ad click aggregator · re-solve #19 | LLD only if your targets need it · **Mocks #6–7** | 11.5 |
 | 15 (4 Jan) | Phase 11: papers and real architectures | #26 Job scheduler; full re-solves of your 5 weakest | **Mocks #8–9** | 12 |
 | 16 (11 Jan) | Phase 12: final prep; company-specific prompts | Full re-solves of 5 more | **Mocks #10–11**; readiness checklist | 11.5 |
 
 End each week with the checkpoint from that week's phase. Stretch problems go in weeks 15–16, the buffer week, or after week 16.
+
+> **⚠ Week 11 runs about 13 hours, not 12.** It carries the whole of Phase 5 plus the geo module plus three problems plus a mock. This is the one week where the plan does not fit its own budget, so decide in advance: use your buffer week here, or move **#18 Web crawler** to week 15. See the week 11 block in [The Straight Path](#the-straight-path-every-link-in-order).
 
 ### Fast track (8 weeks, interview already scheduled)
 
@@ -1341,6 +1574,25 @@ Order-of-magnitude starting points for estimation, summarized from Hello Intervi
 
 **The takeaway:** most applications can run on a single well-tuned database; sharding is usually driven by operational needs (data size, maintenance, isolation) rather than raw throughput. Say which reason applies before you shard.
 
+### K. Cost anchors: what actually drives the bill
+
+Cost is now graded, but nobody expects you to quote a price list. What they want is the ability to say **which line item dominates** and **which lever moves it**. Learn the shape of the table, not the digits.
+
+| Cost driver | Rough shape (US regions, on-demand) | The lever that moves it |
+|---|---|---|
+| Object storage | Cents per GB-month; archive tiers are ~20× cheaper | Lifecycle policies, tiering, compression, deduplication |
+| **Network egress to the internet** | ~10–100× the monthly cost of *storing* the same GB. Usually the surprise on the bill | CDN offload (cache hit ratio is a cost metric), compression, keeping traffic in-region |
+| Cross-AZ / cross-region traffic | Charged per GB in both directions; chatty services multiply it | Co-locate callers and callees; batch; avoid chatty cross-region calls |
+| Compute (CPU) | Per instance-hour; reserved and spot are far cheaper than on-demand | Right-sizing, autoscaling, spot for batch, higher utilization |
+| **GPU compute** | 10–100× a comparable CPU instance-hour. Dominates any AI design | Batching, smaller models, caching, routing cheap requests to cheap models |
+| Managed-service premium | A multiple of self-hosting the same thing | Usually worth paying — say so explicitly, and say why |
+| LLM tokens | Per million tokens, output priced above input | Prompt/prefix caching, semantic caching, shorter contexts, model routing |
+| Observability | Log *volume* is often a top-five line item | Sampling, log levels, metric cardinality limits, retention |
+
+**How to use this in an interview:** name the top two drivers for *your* design, give a lever for each, then state the complexity you are declining to buy. "Reads dominate, so egress is the bill — I'd push redirects to the CDN and expect a 95% hit ratio. I'm not doing multi-region active-active; at 10K DAU it doubles cost to solve a problem we don't have."
+
+**Live numbers** (check before quoting any figure): [AWS S3 pricing](https://aws.amazon.com/s3/pricing/) · [EC2 instance pricing comparison](https://instances.vantage.sh/) · [AWS Pricing Calculator](https://calculator.aws/).
+
 ---
 
 ## Complete Free Resource Index
@@ -1392,15 +1644,26 @@ Order-of-magnitude starting points for estimation, summarized from Hello Intervi
 | [Cloudflare Learning Center](https://www.cloudflare.com/learning/) | Networking, CDN, DNS and security basics |
 | [microservices.io patterns](https://microservices.io/patterns/) | Microservice patterns |
 | [Modern Hardware Numbers for System Design Interviews (Hello Interview)](https://hellointerview.substack.com/p/modern-hardware-numbers-for-system) | Up-to-date capacity numbers for estimation |
+| [Workload isolation using shuffle sharding](https://aws.amazon.com/builders-library/workload-isolation-using-shuffle-sharding/) | Blast radius and cell-based thinking |
+| [Using load shedding to avoid overload](https://aws.amazon.com/builders-library/using-load-shedding-to-avoid-overload/) | What to do past capacity |
+| [Reliability, constant work, and a good cup of coffee](https://aws.amazon.com/builders-library/reliability-and-constant-work/) | Designs that don't change behavior under stress |
+| [Principles of Chaos Engineering](https://principlesofchaos.org/) | Resilience testing, the method |
+| [OWASP Top 10](https://owasp.org/www-project-top-ten/) | The security risks worth naming |
+| [Protocol Buffers language guide](https://protobuf.dev/programming-guides/proto3/) | Serialization and safe message evolution |
+| [Confluent: schema evolution and compatibility](https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html) | Backward vs forward compatibility in pipelines |
+| [Kafka documentation: Design](https://kafka.apache.org/documentation/) | The log, partitions, replication and offsets, from the source |
+| [EC2 instance pricing comparison](https://instances.vantage.sh/) + [AWS Pricing Calculator](https://calculator.aws/) | Cost reasoning with real numbers |
 
 ### Papers and visual tools
 
 | Resource | Best for |
 |---|---|
-| [Raft](https://raft.github.io/) + [visualization](https://thesecretlivesofdata.com/raft/) | Understanding consensus visually |
+| [Raft](https://raft.github.io/) + [visualization](https://thesecretlivesofdata.com/raft/) + [extended paper](https://pdos.csail.mit.edu/6.824/papers/raft-extended.pdf) | Understanding consensus visually |
 | [Jepsen consistency models](https://jepsen.io/consistency) | A map of consistency guarantees |
 | [Dynamo paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) | The classic leaderless, highly available store |
-| [Scaling Memcache at Facebook](https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala) | Caching at massive scale |
+| [Scaling Memcache at Facebook](https://pdos.csail.mit.edu/6.824/papers/memcache-fb.pdf) | Caching at massive scale |
+| [The Tail at Scale](https://research.google/pubs/the-tail-at-scale/) | Why fan-out ruins p99, and the fixes |
+| [GFS](https://pdos.csail.mit.edu/6.824/papers/gfs.pdf) · [MapReduce](https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf) · [Bigtable](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf) · [Chubby](https://static.googleusercontent.com/media/research.google.com/en//archive/chubby-osdi06.pdf) · [ZooKeeper](https://pdos.csail.mit.edu/6.824/papers/zookeeper.pdf) · [Spanner](https://pdos.csail.mit.edu/6.824/papers/spanner.pdf) | The rest of [the 10-paper list](#the-10-paper-reading-list), all free PDFs |
 | [Latency numbers](https://gist.github.com/jboner/2841832) + [interactive version](https://colin-scott.github.io/personal_website/research/interactive_latency.html) | Estimation |
 | [Excalidraw](https://excalidraw.com/) | A free whiteboard for practice and remote interviews |
 
@@ -1482,6 +1745,27 @@ Only if your budget allows. None of these are required.
 ---
 
 ## Version History
+
+**v3 (28 September 2026): coverage audit and the ordered path.**
+
+Added [The Straight Path](#the-straight-path-every-link-in-order): all 105 steps of the core track as one numbered sequence of links, so the roadmap can be followed without planning anything.
+
+Coverage gaps found and closed:
+
+- **Serialization and schema evolution was missing entirely.** Protobuf/Avro, backward vs forward compatibility and schema registries are now in [Phase 2A](#2a-core-module-week-7). Every design with a queue or a versioned API has this question hiding in it.
+- **Tail latency had no treatment** beyond "p99 matters". [Phase 5](#phase-5-reliability-observability-security-and-cost) now covers fan-out tail amplification and hedged requests, with *The Tail at Scale* added to the reading.
+- **Blast radius was missing.** Cell-based architecture and shuffle sharding are now covered.
+- **No resilience *testing*.** Chaos engineering, load testing to failure and failover rehearsals added.
+- **Cost was graded but had no reference.** New [cost anchors cheat sheet](#k-cost-anchors-what-actually-drives-the-bill) covering which line item dominates and which lever moves it.
+- **OLTP vs OLAP was implicit.** Now a [just-in-time module](#2b-just-in-time-modules) before the analytics-flavored problems.
+- **Six of the ten papers had no link.** All ten now link to free PDFs, plus SRE chapters deep-linked to the exact chapter.
+- **Ordering bug:** the at-a-glance diagram listed Phase 2B before Phase 3, out of week order, and omitted the week-15 module.
+
+Schedule bugs found by laying the weeks out step by step:
+
+- **Week 11 doesn't fit its own budget.** It holds all of Phase 5, the geo module, three problems, an LLD problem and a mock — about 13 hours against a 12-hour target. Now labelled honestly, with the data-lifecycle module moved to week 12 and a named deferral (#18 Web crawler) instead of a silent overrun.
+- **Two scheduled LLD problems had nowhere to sit:** the thread-safe rate limiter (week 11) and the key-value store with transactions (week 13) were in the schedule table but fell out of the weekly breakdown. Both now have slots.
+- **A re-solve went missing:** week 8's re-solve of #5 was in the schedule but not in the week's work.
 
 **v2 (28 September 2026): second-pass review.** Problems found in v1 and fixed:
 
