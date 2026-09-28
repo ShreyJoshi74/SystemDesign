@@ -14,6 +14,7 @@ A complete A-to-Z plan to learn system design from scratch and clear high-level 
 
 - **This week:** take the [placement test](#placement-test-what-can-you-skip) (10 minutes), then start Phase 0 or Phase 1. Read Hello Interview's free [System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) introduction alongside it.
 - **Don't want to plan anything?** Open [The Straight Path](#the-straight-path-every-link-in-order) and work down it from step 1. Every resource, in order, with links.
+- **Want to build, not just read?** [hands-on-projects-roadmap.md](hands-on-projects-roadmap.md) is a 12-lab build track timed to these same 16 weeks, where every lab produces a number you can quote in an interview.
 - **Every topic:** learn it → see it in a real system → use it in a problem → explain it out loud in 2 minutes.
 - **Core resources:** Hello Interview, System Design Primer, ByteByteGo, Jordan has no life and Kleppmann's lectures, plus free peer mocks on Aced.
 - **Milestones:** first practice problem in week 4 · baseline mock in week 8 · all 27 core problems by week 15 · 11 mocks by week 16.
@@ -500,6 +501,8 @@ The phases below explain *what* to learn and *why*. This section is the **flatte
 ### Hands-on (do not skip)
 
 Build a small REST API (a to-do app or a mini URL shortener) in your main language with **PostgreSQL**, add **Redis** caching on one read path, run it with **Docker Compose**, and load test it with a free tool such as **k6**. Watch what happens to p99 latency when you remove the cache. This one exercise makes every later concept concrete.
+
+> **Want it spelled out step by step?** This is [Lab 0 in the hands-on projects roadmap](hands-on-projects-roadmap.md#lab-0-the-baseline-service-weeks-12), which gives you the schema, the seed data, the four experiments to run and the numbers you should expect. That companion file runs a build track alongside all 16 weeks.
 
 ### Checkpoint
 
@@ -1261,13 +1264,15 @@ Read each paper's abstract, introduction, design section and conclusion; skip th
 
 ### Build to learn (pick 2–3)
 
-| Project | What it teaches |
-|---|---|
-| URL shortener with Postgres + Redis + a rate limiter, load-tested with k6 | Caching, indexing, rate limiting, measuring p99 |
-| Chat server with WebSockets + Redis pub/sub across 2+ instances | Real-time fan-out, connection state |
-| Order service using the transactional outbox + a Kafka consumer | Reliable events, idempotent consumers |
-| Key-value store with consistent hashing and replication (or the MIT 6.5840 Raft labs) | Partitioning, replication, consensus |
-| Small RAG app with a vector database and an eval set | Chunking, retrieval quality, evals, cost |
+| Project | What it teaches | Detailed version |
+|---|---|---|
+| URL shortener with Postgres + Redis + a rate limiter, load-tested with k6 | Caching, indexing, rate limiting, measuring p99 | [Lab 1](hands-on-projects-roadmap.md#lab-1-url-shortener-under-load-weeks-34) |
+| Chat server with WebSockets + Redis pub/sub across 2+ instances | Real-time fan-out, connection state | — |
+| Order service using the transactional outbox + a Kafka consumer | Reliable events, idempotent consumers | [Labs 3](hands-on-projects-roadmap.md#lab-3-the-async-pipeline-week-6) and [8](hands-on-projects-roadmap.md#lab-8-money--ledger-and-inventory-week-12) |
+| Key-value store with consistent hashing and replication (or the MIT 6.5840 Raft labs) | Partitioning, replication, consensus | [Lab 5](hands-on-projects-roadmap.md#lab-5-distributed-key-value-store-weeks-89) |
+| Small RAG app with a vector database and an eval set | Chunking, retrieval quality, evals, cost | [Lab 9](hands-on-projects-roadmap.md#lab-9-rag-and-an-llm-gateway-week-13) |
+
+> **The full build track:** [hands-on-projects-roadmap.md](hands-on-projects-roadmap.md) expands these into 12 labs timed to the same 16 weeks, each with a measurable experiment. It adds roughly 4–5 hours a week at its recommended intensity — read its [hour cost](hands-on-projects-roadmap.md#pick-your-intensity-and-the-honest-hour-cost) before committing, and never trade a mock for a lab.
 
 ---
 
